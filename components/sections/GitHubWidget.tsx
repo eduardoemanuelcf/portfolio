@@ -70,7 +70,7 @@ export function GitHubWidget() {
       ) : (
         <ul className="panel-sunk" role="log">
           {events.map((event, i) => {
-            const repoName = event.repo.name.replace("eduardocabral8/", "");
+            const repoName = event.repo.name.replace("eduardoemanuelcf/", "");
             const branch = event.payload.ref?.replace("refs/heads/", "") || "main";
             const message = event.payload.commits?.[0]?.message || "";
             return (

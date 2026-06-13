@@ -19,14 +19,14 @@ export async function generateMetadata({
     ? "Full Stack Developer con experiencia en producción y foco en arquitectura sostenible."
     : "Full Stack Developer with production experience and a focus on sustainable architecture.";
   return {
-    title: "Eduardo Cabral · Full Stack Developer",
+    title: "Emanuel Cabral · Full Stack Developer",
     description: desc,
     metadataBase: new URL(siteUrl),
     openGraph: {
-      title: "Eduardo Emanuel Cabral — Full Stack Developer",
+      title: "Emanuel Cabral — Full Stack Developer",
       description: desc,
       url: `${siteUrl}/${params.locale}`,
-      siteName: "Eduardo Emanuel Cabral Portfolio",
+      siteName: "Emanuel Cabral Portfolio",
       locale: isEs ? "es_AR" : "en_US",
       type: "website",
       images: [
@@ -34,13 +34,13 @@ export async function generateMetadata({
           url: "/og.png",
           width: 1200,
           height: 630,
-          alt: "Eduardo Emanuel Cabral — Full Stack Developer",
+          alt: "Emanuel Cabral — Full Stack Developer",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Eduardo Emanuel Cabral — Full Stack Developer",
+      title: "Emanuel Cabral — Full Stack Developer",
       description: desc,
       images: ["/og.png"],
     },
@@ -75,11 +75,11 @@ export default async function LocaleLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Eduardo Emanuel Cabral",
+              name: "Emanuel Cabral",
               jobTitle: "Full Stack Developer",
               url: siteUrl,
               sameAs: [
-                "https://github.com/eduardocabral8",
+                "https://github.com/eduardoemanuelcf",
                 "https://www.linkedin.com/in/eduardoemanuelcf"
               ]
             })

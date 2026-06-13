@@ -42,7 +42,7 @@ export function Contact() {
   const channels = [
     { label: t("contact.email_label"), value: "eduardoemanuelcf@gmail.com", href: "mailto:eduardoemanuelcf@gmail.com", icon: siGmail },
     { label: t("contact.linkedin_label"), value: "linkedin.com/in/eduardoemanuelcf", href: "https://www.linkedin.com/in/eduardoemanuelcf", icon: siLinkedin },
-    { label: t("contact.github_label"), value: "github.com/eduardocabral8", href: "https://github.com/eduardocabral8", icon: siGithub },
+    { label: t("contact.github_label"), value: "github.com/eduardoemanuelcf", href: "https://github.com/eduardoemanuelcf", icon: siGithub },
   ];
 
   return (

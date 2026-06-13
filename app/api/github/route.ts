@@ -5,7 +5,7 @@ export const revalidate = 3600;
 export async function GET() {
   try {
     const res = await fetch(
-      "https://api.github.com/users/eduardocabral8/events?per_page=10",
+      "https://api.github.com/users/eduardoemanuelcf/events?per_page=10",
       {
         headers: {
           "User-Agent": "portfolio-app",
@@ -26,7 +26,7 @@ export async function GET() {
       {
         id: "mock-1",
         type: "PushEvent",
-        repo: { name: "eduardocabral8/tick-panic" },
+        repo: { name: "eduardoemanuelcf/tick-panic" },
         payload: {
           ref: "refs/heads/main",
           commits: [
@@ -38,7 +38,7 @@ export async function GET() {
       {
         id: "mock-2",
         type: "PushEvent",
-        repo: { name: "eduardocabral8/job-log" },
+        repo: { name: "eduardoemanuelcf/job-log" },
         payload: {
           ref: "refs/heads/main",
           commits: [
