@@ -1,0 +1,186 @@
+{
+  "doc": {
+    "subject": "Eduardo Emanuel Cabral",
+    "classification": "Full Stack Developer",
+    "location": "Buenos Aires · AR",
+    "index": "Navegación",
+    "annex": "Consola",
+    "cv": "CV",
+    "lang": "Idioma"
+  },
+  "nav": {
+    "about": "Perfil",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Stack",
+    "contact": "Contacto"
+  },
+  "rec": {
+    "about": { "code": "01", "kicker": "Sobre mí" },
+    "experience": { "code": "02", "kicker": "Trayectoria profesional" },
+    "projects": { "code": "03", "kicker": "Proyectos destacados" },
+    "github": { "code": "04", "kicker": "Actividad en GitHub" },
+    "skills": { "code": "05", "kicker": "Stack técnico" },
+    "contact": { "code": "06", "kicker": "Hablemos" }
+  },
+  "hero": {
+    "masthead": "Presentación",
+    "thesis": "Me importa cómo está hecho, no solo que funcione.",
+    "subtitle": "Full Stack Developer que construye sistemas sostenibles con React, Node.js y TypeScript en producción. Cada afirmación está respaldada por trabajo en producción, no por adjetivos.",
+    "cta_primary": "Revisar proyectos",
+    "cta_secondary": "Coordinar una llamada",
+    "runner": {
+      "cmd": "$ verificar perfil eduardo",
+      "running": "corriendo 3 suites…",
+      "suites": [
+        { "file": "forit/produccion.spec.ts", "case": "despliega a producción — plataforma mayorista en vivo" },
+        { "file": "tickpanic/metodo.spec.ts", "case": "+280 tests escritos antes de que existiera UI" },
+        { "file": "stack/arquitectura.spec.ts", "case": "contratos definidos antes que la implementación" }
+      ],
+      "pass": "PASS",
+      "summary": "Suites: 3 aprobadas, 3 en total",
+      "verified": "Verificado"
+    }
+  },
+  "about": {
+    "title": "A quién estás leyendo",
+    "p1": "Soy Full Stack Developer con experiencia en producción. Actualmente trabajo en ForIT, una software factory, donde diseño e implemento funcionalidades sobre una plataforma mayorista en producción: refactorización de consultas, un motor de sincronización de stock y la migración de más de 2.000 productos. La cobertura de tests es parte del proceso, no un paso final.",
+    "p2": "Aplico TDD en mis proyectos propios desde la fase de diseño. Eso implica definir contratos antes de escribir implementación, separar responsabilidades de forma explícita y reducir el tiempo de depuración en iteraciones posteriores. TickPanic, mi proyecto de mayor envergadura, tiene más de 280 tests sobre entidades, use-cases y servicios, escritos antes de que existiera interfaz.",
+    "p3": "Busco un rol donde las decisiones de arquitectura sean colaborativas y estén fundamentadas en criterios técnicos explícitos. Me interesa trabajar en sistemas con restricciones reales de escala o dominio, donde la deuda técnica se gestione en lugar de acumularse."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "forit": {
+      "company": "ForIT Software Factory",
+      "role": "Full Stack Developer",
+      "period": "Enero 2026 — Presente",
+      "status": "Actual",
+      "context": "Plataforma mayorista en producción, en uso real",
+      "stack": "React 18 + Vite, Node.js, Express, MySQL, Yarn Workspaces",
+      "findings_label": "Logros",
+      "bullets": [
+        "Eliminación de queries N+1 con impacto directo en performance del panel de sucursales",
+        "Migración de +2.000 productos desde WordPress legado mediante scripts XML/WXR desarrollados internamente",
+        "Sistema de inventario en tiempo real: alertas de stock, reposición local y deducción automática por venta en bulto",
+        "Ampliación de cobertura de tests con Vitest: providers, mocks de API y auth, funciones criptográficas y controladores"
+      ],
+      "technical_label": "Notas de arquitectura",
+      "technical": "La eliminación de N+1 requirió análisis del modelo de datos, evaluación del impacto en el resto del sistema y validación con tests antes de modificar producción. Los scripts de migración XML/WXR se desarrollaron desde cero con lógica de mapeo de categorías y manejo de duplicados, sin documentación de referencia sobre el formato de origen."
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "intro": "Tres proyectos. Cada uno está en vivo, con código disponible, o ambos.",
+    "spec_label": "Stack",
+    "live": "En vivo",
+    "source": "Código",
+    "tickpanic": {
+      "name": "TickPanic",
+      "exhibit": "Proyecto 01",
+      "proof": "+280 tests · TDD-first · Clean Architecture",
+      "description": "Aplicación multijugador en tiempo real construida con Clean Architecture, TDD y sincronización server-side vía WebSockets.",
+      "stack": "TypeScript 5, React 19, Fastify, Socket.io, PostgreSQL, Prisma ORM, Docker, pnpm workspaces, Nginx, Vitest",
+      "demo": "tick-panic.vercel.app",
+      "repo": "github.com/eduardocabral8/tick-panic"
+    },
+    "jardin": {
+      "name": "El Jardín de las Respuestas",
+      "exhibit": "Proyecto 02",
+      "proof": "13 endpoints · auth JWT · gestión de roles",
+      "description": "Plataforma educativa con API REST: 13 endpoints, autenticación JWT, gestión de roles y sistema de foros. Trabajé en los endpoints de la API, la integración con el frontend y mejoras de UI.",
+      "stack": "NestJS, PostgreSQL, Prisma ORM, JWT, React",
+      "demo": "jardinrespuestas.netlify.app",
+      "repo": "github.com/el-jardin-de-las-respuestas/el-jardin-de-las-respuestas"
+    },
+    "joblog": {
+      "name": "Job Log",
+      "exhibit": "Proyecto 03",
+      "proof": "Open source · serverless · Manifest V3",
+      "description": "Extensión de Chrome open source, serverless, que registra postulaciones en Google Sheets con extracción híbrida vía Gemini API.",
+      "stack": "JavaScript, Chrome Extensions API (Manifest V3), Gemini API, Google Sheets API, OAuth",
+      "repo": "github.com/eduardocabral8/job-log"
+    },
+    "view_demo": "Ver demo",
+    "view_repo": "Repositorio",
+    "screenshot_alt": "Captura de {name}",
+    "team_tag": "Proyecto grupal"
+  },
+  "github": {
+    "title": "Actividad reciente",
+    "intro": "Últimos commits públicos empujados a mis repositorios. Esta sección se verifica sola, en vivo.",
+    "loading": "Cargando actividad…",
+    "empty": "No hay actividad pública reciente.",
+    "live_tag": "Feed en vivo"
+  },
+  "skills": {
+    "title": "Tecnologías",
+    "intro": "Tecnologías listadas por el contexto en que se usaron realmente: sistemas en producción, proyectos propios con arquitectura definida o colaboraciones externas. Refleja exposición real, no una autoevaluación.",
+    "count_label": "ítems",
+    "production": {
+      "label": "En producción (ForIT)",
+      "status": "Verificado",
+      "items": ["React 18", "Vite", "Node.js", "Express", "MySQL", "Yarn Workspaces", "Vitest", "GitHub Actions"]
+    },
+    "personal": {
+      "label": "Proyectos propios completos",
+      "status": "Verificado",
+      "items": ["TypeScript", "Fastify", "Socket.io", "NestJS", "PostgreSQL", "Prisma ORM", "Docker", "pnpm workspaces", "Nginx", "JWT", "React 19"]
+    },
+    "collaborative": {
+      "label": "Proyectos colaborativos / académicos",
+      "status": "En uso",
+      "items": ["Astro", "Next.js", "Material UI", "SQLite"]
+    },
+    "transversal": {
+      "label": "Herramientas transversales",
+      "status": "En uso",
+      "items": ["Git", "Bash", "GitHub Actions", "Tailwind CSS"]
+    },
+    "exploring": {
+      "label": "Explorando",
+      "status": "En evaluación",
+      "items": ["Python", "Extensiones de Chrome", "APIs de IA"]
+    }
+  },
+  "contact": {
+    "title": "Trabajemos juntos",
+    "cta": "Estoy disponible para conversaciones sobre roles full stack, remoto o presencial en Buenos Aires. Si el perfil encaja con tu equipo o posición, escribime por el formulario o por un canal directo.",
+    "channels_label": "Canales directos",
+    "email_label": "Email",
+    "linkedin_label": "LinkedIn",
+    "github_label": "GitHub",
+    "form_name": "Nombre",
+    "form_email": "Email",
+    "form_message": "Mensaje",
+    "form_submit": "Enviar mensaje",
+    "form_sending": "Enviando…",
+    "form_success": "¡Mensaje enviado! Te respondo a la brevedad.",
+    "form_error": "No se pudo enviar el mensaje. Intentá de nuevo.",
+    "form_headline": "Enviar un mensaje",
+    "open": "Abrir"
+  },
+  "footer": {
+    "signoff": "Eduardo Emanuel Cabral",
+    "builtwith": "Construido con Next.js, TypeScript y Tailwind CSS."
+  },
+  "not_found": {
+    "code": "404",
+    "header": "Página no encontrada",
+    "ref": "Error 404",
+    "description": "La página que buscás no existe. Puede haber sido movida o eliminada.",
+    "cta": "Volver al inicio"
+  },
+  "terminal": {
+    "title": "EEC-PORTFOLIO · consola",
+    "welcome": "Terminal interactiva. Escribe 'help' para ver los comandos.\n",
+    "prompt": "eec@portfolio:~$",
+    "help_output": "Comandos disponibles:\n  whoami      Muestra biografía y estado actual\n  skills      Lista habilidades técnicas\n  experience  Muestra historial de trabajo\n  contact     Muestra opciones de contacto\n  locale      Cambia el idioma (ej: 'locale es' o 'locale en')\n  clear       Limpia la pantalla\n  help        Muestra este menú de ayuda",
+    "whoami_output": "Eduardo Emanuel Cabral — Desarrollador Full Stack\nBuenos Aires, Argentina\n\nDesarrollador con experiencia enfocado en diseñar y escalar aplicaciones con React, Node.js y TypeScript. Actualmente en búsqueda de oportunidades remotas o presenciales en Buenos Aires.",
+    "skills_output": "Stack Técnico:\n  - Frontend: React (18/19), Next.js, Vite, Astro, Tailwind CSS, Material UI\n  - Backend: Node.js, Express, Fastify, NestJS, Socket.io, APIs REST\n  - Base de Datos: MySQL, PostgreSQL, SQLite, Prisma ORM\n  - Herramientas: Git, Docker, Nginx, pnpm/Yarn workspaces, GitHub Actions, Vitest",
+    "experience_output": "Experiencia Laboral:\n  - ForIT Software Factory (Desarrollador Full Stack, 2026 - Presente)\n    Plataforma mayorista en producción. Refactorización de consultas, motor de sincronización de stock, migración de +2.000 productos, integración TDD.",
+    "contact_output": "Canales de Contacto:\n  - Email: eduardoemanuelcf@gmail.com\n  - LinkedIn: linkedin.com/in/eduardoemanuelcf\n  - GitHub: github.com/eduardocabral8",
+    "locale_changed": "Idioma del sistema cambiado a {lang}",
+    "locale_invalid": "Idioma no válido. Usa 'locale es' o 'locale en'",
+    "command_not_found": "''{cmd}'' no se reconoce como comando. Escribe 'help' para ver la lista."
+  }
+}

@@ -1,4 +1,19 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import createNextIntlPlugin from "next-intl/plugin";
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin("./i18n.config.ts");
+
+const nextConfig = {
+  experimental: {
+    optimizePackageImports: ["@fluentui/react-icons", "simple-icons"],
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+      },
+    ],
+  },
+};
+
+export default withNextIntl(nextConfig);
