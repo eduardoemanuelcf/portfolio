@@ -2,7 +2,7 @@
 
 My personal developer portfolio. An editorial, paper styled site built with Next.js and the App Router, fully bilingual in Spanish and English.
 
-Live: https://your-domain (update after deploy)
+Live: https://eduardoemanuelcf.vercel.app
 
 ## Stack
 
