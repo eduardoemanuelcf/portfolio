@@ -33,7 +33,7 @@
       "cmd": "$ verificar perfil emanuel",
       "running": "corriendo 3 suites…",
       "suites": [
-        { "file": "forit/produccion.spec.ts", "case": "despliega a producción — plataforma mayorista en vivo" },
+        { "file": "forit/produccion.spec.ts", "case": "despliega a producción — e-commerce mayorista en vivo" },
         { "file": "tickpanic/metodo.spec.ts", "case": "+280 tests escritos antes de que existiera UI" },
         { "file": "stack/arquitectura.spec.ts", "case": "contratos definidos antes que la implementación" }
       ],
@@ -44,7 +44,7 @@
   },
   "about": {
     "title": "A quién estás leyendo",
-    "p1": "Soy Full Stack Developer con experiencia en producción. Actualmente trabajo en ForIT, una software factory, donde diseño e implemento funcionalidades sobre una plataforma mayorista en producción: refactorización de consultas, un motor de sincronización de stock y la migración de más de 2.000 productos. La cobertura de tests es parte del proceso, no un paso final.",
+    "p1": "Soy Full Stack Developer con experiencia en producción. Actualmente trabajo en ForIT, una software factory, donde diseño e implemento funcionalidades sobre una plataforma de e-commerce mayorista en producción: eliminación de queries N+1, un motor de sincronización de stock y la migración de más de 2.000 productos. La cobertura de tests es parte del proceso, no un paso final: llevo escritas 52 suites con más de 445 casos.",
     "p2": "Aplico TDD en mis proyectos propios desde la fase de diseño. Eso implica definir contratos antes de escribir implementación, separar responsabilidades de forma explícita y reducir el tiempo de depuración en iteraciones posteriores. TickPanic, mi proyecto de mayor envergadura, tiene más de 280 tests sobre entidades, use-cases y servicios, escritos antes de que existiera interfaz.",
     "p3": "Busco un rol donde las decisiones de arquitectura sean colaborativas y estén fundamentadas en criterios técnicos explícitos. Me interesa trabajar en sistemas con restricciones reales de escala o dominio, donde la deuda técnica se gestione en lugar de acumularse."
   },
@@ -55,14 +55,14 @@
       "role": "Full Stack Developer",
       "period": "Enero 2026 — Presente",
       "status": "Actual",
-      "context": "Plataforma mayorista en producción, en uso real",
+      "context": "Plataforma de e-commerce mayorista en producción, en uso real",
       "stack": "React 18 + Vite, Node.js, Express, MySQL, Yarn Workspaces",
       "findings_label": "Logros",
       "bullets": [
-        "Eliminación de queries N+1 con impacto directo en performance del panel de sucursales",
-        "Migración de +2.000 productos desde WordPress legado mediante scripts XML/WXR desarrollados internamente",
+        "Eliminación de queries N+1 con impacto directo en performance del panel de depósitos",
+        "Migración de +2.000 productos desde WordPress legado mediante scripts XML/WXR desarrollados internamente, completada en 30 horas",
         "Sistema de inventario en tiempo real: alertas de stock, reposición local y deducción automática por venta en bulto",
-        "Ampliación de cobertura de tests con Vitest: providers, mocks de API y auth, funciones criptográficas y controladores"
+        "52 suites con +445 casos de prueba en Vitest: providers, mocks de API y auth, funciones criptográficas y controladores"
       ],
       "technical_label": "Notas de arquitectura",
       "technical": "La eliminación de N+1 requirió análisis del modelo de datos, evaluación del impacto en el resto del sistema y validación con tests antes de modificar producción. Los scripts de migración XML/WXR se desarrollaron desde cero con lógica de mapeo de categorías y manejo de duplicados, sin documentación de referencia sobre el formato de origen."
@@ -177,7 +177,7 @@
     "help_output": "Comandos disponibles:\n  whoami      Muestra biografía y estado actual\n  skills      Lista habilidades técnicas\n  experience  Muestra historial de trabajo\n  contact     Muestra opciones de contacto\n  locale      Cambia el idioma (ej: 'locale es' o 'locale en')\n  clear       Limpia la pantalla\n  help        Muestra este menú de ayuda",
     "whoami_output": "Emanuel Cabral — Desarrollador Full Stack\nBuenos Aires, Argentina\n\nDesarrollador con experiencia enfocado en diseñar y escalar aplicaciones con React, Node.js y TypeScript. Actualmente en búsqueda de oportunidades remotas o presenciales en Buenos Aires.",
     "skills_output": "Stack Técnico:\n  - Frontend: React (18/19), Next.js, Vite, Astro, Tailwind CSS, Material UI\n  - Backend: Node.js, Express, Fastify, NestJS, Socket.io, APIs REST\n  - Base de Datos: MySQL, PostgreSQL, SQLite, Prisma ORM\n  - Herramientas: Git, Docker, Nginx, pnpm/Yarn workspaces, GitHub Actions, Vitest",
-    "experience_output": "Experiencia Laboral:\n  - ForIT Software Factory (Desarrollador Full Stack, 2026 - Presente)\n    Plataforma mayorista en producción. Refactorización de consultas, motor de sincronización de stock, migración de +2.000 productos, integración TDD.",
+    "experience_output": "Experiencia Laboral:\n  - ForIT Software Factory (Desarrollador Full Stack, 2026 - Presente)\n    Plataforma de e-commerce mayorista en producción. Eliminación de queries N+1, motor de sincronización de stock, migración de +2.000 productos, 52 suites de tests con +445 casos.",
     "contact_output": "Canales de Contacto:\n  - Email: eduardoemanuelcf@gmail.com\n  - LinkedIn: linkedin.com/in/eduardoemanuelcf\n  - GitHub: github.com/eduardoemanuelcf",
     "locale_changed": "Idioma del sistema cambiado a {lang}",
     "locale_invalid": "Idioma no válido. Usa 'locale es' o 'locale en'",
