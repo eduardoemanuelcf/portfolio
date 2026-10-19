@@ -95,15 +95,22 @@
     "joblog": {
       "name": "Job Log",
       "exhibit": "Project 03",
-      "proof": "Open source · serverless · Manifest V3",
-      "description": "Open source, serverless Chrome extension that logs job applications to Google Sheets using hybrid extraction via Gemini API.",
-      "stack": "JavaScript, Chrome Extensions API (Manifest V3), Gemini API, Google Sheets API, OAuth",
-      "repo": "github.com/eduardoemanuelcf/job-log"
+      "proof": "Chrome Web Store · Firefox Add-ons · Open source",
+      "description": "Chrome and Firefox extension that saves job applications to Google Sheets from the job posting. Combines direct extraction with Gemini or Groq and includes notes and weekly goal tracking.",
+      "stack": "JavaScript, WebExtensions (Manifest V3), Gemini API, Groq API, Google Sheets API, OAuth, Next.js, TypeScript",
+      "repo": "github.com/eduardoemanuelcf/job-log",
+      "contribution": "I built the extension and its website, integrated Google Sheets through OAuth, and published the product on Chrome Web Store and Firefox Add-ons.",
+      "demo": "job-log.emanuelcabral.dev",
+      "screenshot_alt": "Job Log interface for saving an application to Google Sheets, with sample data"
     },
     "view_demo": "View demo",
     "view_repo": "Repository",
     "screenshot_alt": "Screenshot of {name}",
-    "team_tag": "Team project"
+    "team_tag": "Team project",
+    "published": "Published",
+    "view_site": "Visit website",
+    "install_chrome": "Install for Chrome",
+    "install_firefox": "Install for Firefox"
   },
   "github": {
     "title": "Recent activity",

@@ -95,15 +95,22 @@
     "joblog": {
       "name": "Job Log",
       "exhibit": "Proyecto 03",
-      "proof": "Open source · serverless · Manifest V3",
-      "description": "Extensión de Chrome open source, serverless, que registra postulaciones en Google Sheets con extracción híbrida vía Gemini API.",
-      "stack": "JavaScript, Chrome Extensions API (Manifest V3), Gemini API, Google Sheets API, OAuth",
-      "repo": "github.com/eduardoemanuelcf/job-log"
+      "proof": "Chrome Web Store · Firefox Add-ons · Open source",
+      "description": "Extensión para Chrome y Firefox que registra postulaciones laborales en Google Sheets desde la oferta. Combina extracción directa con Gemini o Groq e incluye notas y seguimiento de metas semanales.",
+      "stack": "JavaScript, WebExtensions (Manifest V3), Gemini API, Groq API, Google Sheets API, OAuth, Next.js, TypeScript",
+      "repo": "github.com/eduardoemanuelcf/job-log",
+      "contribution": "Desarrollé la extensión y su sitio web, integré Google Sheets mediante OAuth y publiqué el producto en Chrome Web Store y Firefox Add-ons.",
+      "demo": "job-log.emanuelcabral.dev",
+      "screenshot_alt": "Interfaz de Job Log para registrar una postulación en Google Sheets, con datos de ejemplo"
     },
     "view_demo": "Ver demo",
     "view_repo": "Repositorio",
     "screenshot_alt": "Captura de {name}",
-    "team_tag": "Proyecto grupal"
+    "team_tag": "Proyecto grupal",
+    "published": "Publicado",
+    "view_site": "Ver web",
+    "install_chrome": "Instalar en Chrome",
+    "install_firefox": "Instalar en Firefox"
   },
   "github": {
     "title": "Actividad reciente",

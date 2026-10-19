@@ -7,12 +7,21 @@ interface Entry {
   hasDemo: boolean;
   img: string | null;
   team?: boolean;
+  stores?: { label: "install_chrome" | "install_firefox"; url: string }[];
 }
 
 const ENTRIES: Entry[] = [
   { key: "tickpanic", hasDemo: true, img: "/projects/tickpanic.webp" },
   { key: "jardin", hasDemo: true, img: "/projects/jardin.webp", team: true },
-  { key: "joblog", hasDemo: false, img: "/projects/joblog.webp" },
+  {
+    key: "joblog",
+    hasDemo: true,
+    img: "/projects/joblog.webp",
+    stores: [
+      { label: "install_chrome", url: "https://chromewebstore.google.com/detail/job-log/ibmpgpcbdcabaeblnjocephjlhcfjhdd" },
+      { label: "install_firefox", url: "https://addons.mozilla.org/firefox/addon/job-log/" },
+    ],
+  },
 ];
 
 export function Projects() {
@@ -54,7 +63,7 @@ export function Projects() {
                     color: demo ? "var(--stamp-ink)" : "var(--ink-3)",
                   }}
                 >
-                  {demo ? `● ${t("projects.live")}` : t("projects.source")}
+                  {entry.stores ? `● ${t("projects.published")}` : demo ? `● ${t("projects.live")}` : t("projects.source")}
                 </span>
                 {entry.team && (
                   <span
@@ -71,9 +80,12 @@ export function Projects() {
                 <h3 className="h2 text-ink" style={{ textWrap: "balance" }}>{name}</h3>
                 <p className="mono-meta mt-1 lg:hidden">{proof}</p>
                 <p className="body mt-3 max-w-[60ch]">{desc}</p>
+                {entry.key === "joblog" && (
+                  <p className="body mt-3 max-w-[60ch]">{t("projects.joblog.contribution")}</p>
+                )}
 
                 {entry.img && (
-                  <ProjectShot src={entry.img} alt={t("projects.screenshot_alt", { name })} />
+                  <ProjectShot src={entry.img} alt={entry.key === "joblog" ? t("projects.joblog.screenshot_alt") : t("projects.screenshot_alt", { name })} />
                 )}
 
                 <div className="mt-5 panel-sunk px-4 py-3">
@@ -88,9 +100,14 @@ export function Projects() {
                 </div>
 
                 <div className="flex flex-wrap gap-x-6 gap-y-2 mt-5">
+                  {entry.stores?.map((store) => (
+                    <a key={store.label} className="link-ink font-mono text-[0.8rem]" href={store.url} target="_blank" rel="noopener noreferrer">
+                      → {t(`projects.${store.label}`)}
+                    </a>
+                  ))}
                   {demo && (
                     <a className="link-ink font-mono text-[0.8rem]" href={`https://${demo}`} target="_blank" rel="noopener noreferrer">
-                      → {t("projects.view_demo")} · {demo}
+                      → {t(entry.key === "joblog" ? "projects.view_site" : "projects.view_demo")} · {demo}
                     </a>
                   )}
                   <a className="link-ink font-mono text-[0.8rem]" href={`https://${repo}`} target="_blank" rel="noopener noreferrer">
